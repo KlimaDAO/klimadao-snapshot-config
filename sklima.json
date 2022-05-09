@@ -1,0 +1,19 @@
+[
+  {
+    "name": "sKLIMA token holder",
+    "strategy": {
+      "name": "erc20-balance-of",
+      "params": {
+        "address": "0xb0C22d8D350C67420f06F48936654f567C73E8C8",
+        "symbol": "sKLIMA",
+        "decimals": 9
+      }
+    },
+    "network": "137",
+    "addresses": [
+        "0x6f370dba99E32A3cAD959b341120DB3C9E280bA6",
+        "0xbDBd4347b082D9d6BdF2Da4555a37Ce52a2e2120"
+    ],
+    "snapshot": 28091084
+  }
+]

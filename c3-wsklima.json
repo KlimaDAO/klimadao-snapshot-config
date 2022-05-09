@@ -1,0 +1,83 @@
+[
+  {
+    "name": "wsKLIMA wallet balance",
+    "strategy": {
+      "name": "math",
+      "params": {
+        "symbol": "MATH",
+        "operands": [
+          {
+            "type": "strategy",
+            "strategy": {
+              "network": "137",
+              "name": "contract-call",
+              "params": {
+                "address": "0xe02efadA566Af74c92b6659d03BAaCb4c06Cc856",
+                "symbol": "wsKLIMA-C3",
+                "decimals": 18,
+                "args": [
+                  "%{address}"
+                ],
+                "methodABI": {
+                  "inputs": [
+                    {
+                      "internalType": "address",
+                      "name": "account",
+                      "type": "address"
+                    }
+                  ],
+                  "name": "lockedLiquidityOf",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "view",
+                  "type": "function"
+                }
+              }
+            }
+          },
+          {
+            "type": "strategy",
+            "strategy": {
+              "name": "contract-call",
+              "network": "137",
+              "params": {
+                "address": "0x25d28a24Ceb6F81015bB0b2007D795ACAc411b4d",
+                "decimals": 9,
+                "symbol": "index",
+                "args": [],
+                "methodABI": {
+                  "inputs": [],
+                  "name": "index",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "view",
+                  "type": "function"
+                }
+              }
+            }
+          }
+        ],
+        "operation": "multiply"
+      }
+    },
+    "network": "137",
+    "addresses": [
+      "0xade95e98fa18c40345eecd2688188d9b9cb40313",
+      "0x72ac3ebb6b9d674fad43a26e1a0e61010ad5583d",
+      "0x6d05bf186aef1f23c9841b8f46d653efd1ce27a7"
+    ],
+    "snapshot": 28090933
+  }
+]
