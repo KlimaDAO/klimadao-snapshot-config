@@ -1,0 +1,19 @@
+[
+  {
+    "name": "KLIMA token holder",
+    "strategy": {
+      "name": "erc20-balance-of",
+      "params": {
+        "address": "0x4e78011ce80ee02d2c3e649fb657e45898257815",
+        "symbol": "KLIMA",
+        "decimals": 9
+      }
+    },
+    "network": "137",
+    "addresses": [
+        "0x4e78011ce80ee02d2c3e649fb657e45898257815",
+        "0xaDe95E98fa18c40345EecD2688188d9b9cb40313"
+    ],
+    "snapshot": 28089882
+  }
+]

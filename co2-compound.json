@@ -1,0 +1,83 @@
+{
+    "name": "CO2_COMPOUND holder locked sKLIMA",
+    "strategy": {
+      "name": "math",
+      "params": {
+        "symbol": "MATH",
+        "operands": [
+          {
+            "type": "strategy",
+            "strategy": {
+                "network": "137",
+                "name": "contract-call",
+                "params": {
+                    "address": "0x08e253270240509E57B9543c0453F0bAc839d0a1",
+                    "decimals": 1,
+                    "symbol": "KLIMAxSVN:CO2C",
+                    "methodABI": {
+                      "inputs": [
+                        {
+                          "internalType": "address",
+                          "name": "owner",
+                          "type": "address"
+                        }
+                      ],
+                      "name": "balanceOf",
+                      "outputs": [
+                        {
+                          "internalType": "uint256",
+                          "name": "",
+                          "type": "uint256"
+                        }
+                      ],
+                      "payable": false,
+                      "stateMutability": "view",
+                      "type": "function"
+                    }
+                }
+            }
+          },
+          {
+            "type": "strategy",
+            "strategy": {
+                "network": "137",
+                "name": "contract-call",
+                "params": {
+                    "address": "0xb0C22d8D350C67420f06F48936654f567C73E8C8",
+                    "decimals": 9,
+                    "symbol": "sKLIMA-CO2C",
+                    "args": "0x08e253270240509E57B9543c0453F0bAc839d0a1",
+                    "methodABI": {
+                      "inputs": [
+                        {
+                          "internalType": "address",
+                          "name": "account",
+                          "type": "address"
+                        }
+                      ],
+                      "name": "balanceOf",
+                      "outputs": [
+                        {
+                          "internalType": "uint256",
+                          "name": "",
+                          "type": "uint256"
+                        }
+                      ],
+                      "payable": false,
+                      "stateMutability": "view",
+                      "type": "function"
+                    }
+                }
+            }
+          }
+        ],
+        "operation": "multiply"
+      }
+    },
+    "network": "137",
+    "addresses": [
+      "0xa53a13a80d72a855481de5211e7654fabdfe3526",
+      "0x0f423422646b4fd8dff78f0ffab6fe768fc76bf9"
+    ],
+    "snapshot": 28091834
+}
