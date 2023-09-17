@@ -1,0 +1,59 @@
+[
+  {
+    "name": "KLIMA token holder",
+    "strategy": {
+      "name": "math",
+      "params": {
+        "symbol": "wsKLIMA",
+        "operands": [
+          {
+            "type": "strategy",
+            "strategy": {
+              "network": "137",
+              "name": "erc20-balance-of",
+              "params": {
+                "address": "0x4e78011ce80ee02d2c3e649fb657e45898257815",
+                "symbol": "KLIMA",
+                "decimals": 9
+              }
+            }
+          },
+          {
+            "type": "strategy",
+            "strategy": {
+              "name": "contract-call",
+              "network": "137",
+              "params": {
+                "address": "0x25d28a24Ceb6F81015bB0b2007D795ACAc411b4d",
+                "decimals": 9,
+                "symbol": "index",
+                "args": [],
+                "methodABI": {
+                  "inputs": [],
+                  "name": "index",
+                  "outputs": [
+                    {
+                      "internalType": "uint256",
+                      "name": "",
+                      "type": "uint256"
+                    }
+                  ],
+                  "payable": false,
+                  "stateMutability": "view",
+                  "type": "function"
+                }
+              }
+            }
+          }
+        ],
+        "operation": "divide"
+      }
+    },
+    "network": "137",
+    "addresses": [
+        "0x4e78011ce80ee02d2c3e649fb657e45898257815",
+        "0xaDe95E98fa18c40345EecD2688188d9b9cb40313"
+    ],
+    "snapshot": 28089882
+  }
+]
