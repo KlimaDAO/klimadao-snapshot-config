@@ -1,0 +1,17 @@
+{
+  "name": "wsKLIMA token holder",
+  "strategy": {
+    "name": "erc20-balance-of",
+    "params": {
+      "address": "0x6f370dba99E32A3cAD959b341120DB3C9E280bA6",
+      "symbol": "wsKLIMA",
+      "decimals": 18
+    }
+  },
+  "network": "137",
+  "addresses": [
+    "0xd4e692eb01861f2bc0534b9a1afd840719648c49",
+    "0x414B4b5a2A0e303B89360EdA83598aB7702EAe04"
+  ],
+  "snapshot": 28091249
+}
